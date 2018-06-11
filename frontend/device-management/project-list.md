@@ -25,11 +25,16 @@ Vue-router
 * #### 邏輯說明
 
 ```
-1. 在Device Management中編輯Project的頁面(Url: /Login/CloudManager/DeviceManagement)  
+1. Page Load
+  1.1 執行$checkLogin，確認使用者是否有登入  
+  1.2 getProjectList function。
+
+
+1. 在Device Management中列出Project的頁面(Url: /Login/CloudManager/DeviceManagement)  
 　1.1 透過src/components/MenuBar.vue按下1號按鈕執行select function，透過src/router/index.js呼叫src/components/ProjectList.vue進入可編輯Project的頁面。  
-　1.2 同時在src/components/MenuBar.vue檢查$store.state.user.scope使用者的權限將變數存入scopeEdit。  
+　1.2 同時在src/components/MenuBar.vue檢查$store.state.user.scope使用者的權限將變數存入scopeEdit。
 2. 一進入Project的頁面即執行$checkLogin和getProjectList function。  
-　2.1 執行$checkLogin判斷scopeEdit狀態。  
+　2.1 執行$checkLogin判斷scopeEdit狀態。
   　2.1.1 若為true即可顯示4、5號按鈕。  
   　2.1.2 若為false即不顯示4、5、7號按鈕。  
   2.2 執行getProjectList列出所有project相關資訊。  
@@ -53,7 +58,7 @@ Vue-router
 　　　　　　　4.1.1.1.1.2.1.2 若呼叫失敗回傳errMsg。  
 　　　　　4.1.1.1.1.3 若不想儲存編輯按下8號按鈕，令editObj = {}並回到一開始detail畫面。  
 　　　　　4.1.1.1.1.4 按下10號按鈕，令tempProject = {}並令detailVisible = False關閉視窗。  
-　　　4.1.2 若呼叫失敗執行$checkToken。  
+    4.1.2 若呼叫失敗執行$checkToken。  
 5. 按下4號按鈕執行handleDeleteClick。  
 　5.1 將選取的project資訊存入tempProject物件中，並令deleteVisiable = true。  
 　　5.1.1 呼叫src/components/Common/Modal.vue，顯示delete視窗。  
@@ -76,7 +81,7 @@ Vue-router
  　　　　6.1.1.2 按下14號按鈕，執行handleCancelClick。  
  　　　　　6.1.1.2.1 令tempProject = {}並令addVisible = false關閉視窗。  
 7. 按下6號按鈕執行handleProjectClick。  
-　7.1 透過src/router/index.js呼叫src/components/ScadaList.vue進入可編輯SCADA的頁面。 
+　7.1 透過src/router/index.js呼叫src/components/ScadaList.vue進入可編輯SCADA的頁面。
 ```
 
 
