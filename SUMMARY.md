@@ -16,5 +16,6 @@
   * [Alarm](backend/alarm.md)
     * [\[POST\] /Alarms](backend/alarm/post-alarm.md)
     * [\[GET\] /Alarms](backend/alarm/get-alarm.md)
+    * [\[PUT\] /Alarms](backend/alarm/put-alarm.md)
 * [DataWorker功能說明](dataworker.md)
 
