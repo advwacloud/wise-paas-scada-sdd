@@ -37,10 +37,12 @@
   * #### 傳出參數
 
   | HTTP Status Code | Details |
-  
   | -- | -- |
-  
   | 200 | `{"alarmId": 0}` |
+  
+  | Markdown | HTML | Rendered |
+  | -- | -- | -- |
+  | `# Some Header` | `<h1>Some Header</h1>` | <h1>Some Header</h1> |
 
 * #### 邏輯說明
 
