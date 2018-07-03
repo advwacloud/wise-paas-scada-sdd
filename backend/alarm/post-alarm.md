@@ -36,13 +36,9 @@
         * out range(5): 值大於`upperLimit`或小於`lowerLimit`，就觸發警報
   * #### 傳出參數
 
-  | HTTP Status Code | Details |
-  | -- | -- |
-  | 200 | `{"alarmId": 0}` |
-  
-  | Markdown | HTML | Rendered |
-  | -- | -- | -- |
-  | `# Some Header` | `<h1>Some Header</h1>` | <h1>Some Header</h1> |
+| HTTP Status Code | Details |
+| -- | -- |
+| 200 | `{"alarmId": 0}` |
 
 * #### 邏輯說明
 
