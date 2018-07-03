@@ -13,7 +13,8 @@
 * [後端API功能說明](backend.md)
   * [Project](backend/project.md)
     * [\[POST\] /Projects](backend/project/post-projects.md)
-  * [Alarm](baclend/alarm.md)
+  * [Alarm](backend/alarm.md)
     * [\[POST\] /Alarms](backend/alarm/post-alarm.md)
+    * [\[GET\] /Alarms](backend/alarm/get-alarm.md)
 * [DataWorker功能說明](dataworker.md)
 
